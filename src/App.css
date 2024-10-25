@@ -1,0 +1,570 @@
+/* Add these styles to your App.css file */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.button-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.auth-button {
+  width: 100px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.auth-button:hover {
+  background-color: #166fe5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .button-container {
+    padding: 1.5rem;
+  }
+}
+
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.register-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #166fe5;
+}
+
+.error {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .register-form {
+    padding: 1.5rem;
+  }
+}
+
+
+/* Add these styles to your App.css file */
+
+/* Existing styles for Register and Main components... */
+
+/* Styles for Login component */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #166fe5;
+}
+
+.error {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+}
+
+
+.bank-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* Medium width */
+  padding: 10px 20px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.add-btn:hover {
+  background-color: #166fe5;
+}
+
+/* Style for the container of Bank components */
+.bank-details-container > div:not(.add-btn) {
+  overflow-y: auto;
+  max-height: calc(100vh - 100px); /* Adjust based on your needs */
+  padding-bottom: 70px; /* Space for the button */
+}
+
+/* Styles for individual Bank components */
+.bank {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* New styles for the edit icon */
+
+
+
+
+/* If you want to use an actual icon instead of text */
+.edit-icon::before {
+  content: "\270E";  /* Unicode for a pencil icon */
+  font-size: 18px;
+}
+
+
+/* Confirm Delete Styles */
+.confirm-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.confirm-box p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.confirm-btn, .cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #c82333;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+
+/* Add Bank Form Styles */
+.add-bank-form {
+  max-width: 500px; /* Maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Padding inside the form */
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+.form-group label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Bold text for labels */
+  color: #333; /* Dark text color */
+}
+
+.form-group input {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 4px; /* Rounded corners for input fields */
+  font-size: 16px; /* Font size for input text */
+}
+
+.form-group input:focus {
+  outline: none; /* Remove default outline */
+  border-color: #80bdff; /* Change border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Shadow effect on focus */
+}
+
+.form-btns {
+  display: flex; /* Flexbox for button layout */
+  justify-content: center; /* Center buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+.submit-btn, .cancel-btn {
+  padding: 10px 20px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  font-size: 16px; /* Font size for button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.submit-btn {
+  background-color: #007bff; /* Blue background for submit button */
+  color: white; /* White text */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cancel-btn {
+  background-color: #6c757d; /* Grey background for cancel button */
+  color: white; /* White text */
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268; /* Darker grey on hover */
+}
+
+/* Add Bank Form Styles */
+.add-bank-form {
+  max-width: 500px; /* Maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Padding inside the form */
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+.form-group label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Bold text for labels */
+  color: #333; /* Dark text color */
+}
+
+.form-group input {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 4px; /* Rounded corners for input fields */
+  font-size: 16px; /* Font size for input text */
+}
+
+.form-group input:focus {
+  outline: none; /* Remove default outline */
+  border-color: #80bdff; /* Change border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Shadow effect on focus */
+}
+
+.form-btns {
+  display: flex; /* Flexbox for button layout */
+  justify-content: center; /* Center buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+.submit-btn, .cancel-btn {
+  padding: 10px 20px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  font-size: 16px; /* Font size for button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.submit-btn {
+  background-color: #007bff; /* Blue background for submit button */
+  color: white; /* White text */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cancel-btn {
+  background-color: #6c757d; /* Grey background for cancel button */
+  color: white; /* White text */
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268; /* Darker grey on hover */
+}
+
+
+/* Edit Bank Form Styles */
+.edit-bank-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-bank-form .form-group {
+  margin-bottom: 20px;
+}
+
+.edit-bank-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.edit-bank-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.edit-bank-form .form-group input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.edit-bank-form .form-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-bank-form .submit-btn,
+.edit-bank-form .cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-bank-form .submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-bank-form .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.edit-bank-form .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.edit-bank-form .cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.action-button-container {
+  display: flex; /* Aligns children in a row */
+  gap: 10px; /* Space between the buttons */
+  margin-top: 10px; /* Space above the action buttons */
+}
+
+.user-details-container {
+  display: flex;
+  flex-direction: column; /* Aligns items vertically */
+  padding: 20px; /* Adds some padding */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Limits width of container */
+  margin: 20px auto; /* Centers the container on the page */
+}
+
+.user {
+  padding: 10px; /* Adds padding around each user item */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 4px; /* Rounded corners for user items */
+  margin: 5px 0; /* Adds space between user items */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Shows pointer on hover */
+}
+
+.user:hover {
+  background-color: #e0f7fa; /* Light blue background on hover */
+}
+
+
+.user-banks-container {
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 20px; /* Add padding around the container */
+  background-color: #f9f9f9; /* Light background color */
+  min-height: 100vh; /* Ensure the container takes at least full height */
+}
+
+.bank {
+  background-color: white; /* White background for each bank box */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside the box */
+  margin: 10px 0; /* Space between bank boxes */
+  width: 300px; /* Set a fixed width for bank boxes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.bank p {
+  margin: 5px 0; /* Space between paragraphs */
+}
